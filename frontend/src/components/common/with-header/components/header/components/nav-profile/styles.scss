@@ -1,0 +1,30 @@
+.userAvatar {
+  object-fit: cover;
+  position: relative;
+  &::after {
+    content: '';
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px inset;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-radius: 100%;
+  }
+}
+
+.userName {
+  max-width: 9vw;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.dropdown-toggle::after {
+  margin: 0;
+}

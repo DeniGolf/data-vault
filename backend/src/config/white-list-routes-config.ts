@@ -1,0 +1,16 @@
+export default [
+  '/auth/login',
+  '/auth/login/google',
+  '/auth/login/github',
+  '/auth/register',
+  '/auth/reset-password',
+  '/auth/set-password',
+  '/auth/refresh',
+  '/auth/logout',
+  '/auth/update-password-and-fullname',
+  '/users/check-user-registration',
+  '/github/webhooks/pr',
+  '/github/webhooks/label',
+  '/pages/share/link',
+  '/pages/table-of-contents/share',
+];

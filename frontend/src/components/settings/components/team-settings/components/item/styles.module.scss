@@ -1,0 +1,54 @@
+.teamCard {
+  width: 27rem;
+  min-height: 11rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+}
+
+:global {
+  .card-body {
+    padding-left: 35px;
+    gap: 1rem 0;
+
+    .sb-avatar {
+      position: relative;
+      z-index: 4;
+
+      &::after {
+        content: '';
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px inset;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        border-radius: 100%;
+      }
+    }
+
+    .sb-avatar__image,
+    .sb-avatar__text {
+      box-shadow: 0 0 0 2px #fff;
+      background: #fff;
+    }
+
+    > div {
+      margin-left: -20px;
+    }
+  }
+}
+
+.teamName {
+  font-size: 1.8rem;
+}
+
+.avatarsContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.userAvatar {
+  cursor: pointer;
+}
